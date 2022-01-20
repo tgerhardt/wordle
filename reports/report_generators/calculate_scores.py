@@ -23,7 +23,7 @@ ones.
 SOLVER_ROW_TEMPLATE = "{solver} | {mode} | {counts} | {percentage}"
 
 class CalculateSolverScores(object):
-    OUTPUT_FILEPATH = "solver_scores.md"
+    OUTPUT_FILEPATH = "reports/report_output/solver_scores.md"
 
     def _recursively_count_words(self, sub_solver: dict, depth: int) -> List[int]:
         """

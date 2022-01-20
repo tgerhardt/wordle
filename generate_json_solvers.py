@@ -3,6 +3,7 @@ import os
 
 from solver_generators.base_generator import BaseGenerator
 from solver_generators.generators.alphabetical import AlphabeticalGenerator
+from solver_generators.generators.information import InformationGenerator
 from solver_generators.generators.most_buckets import MaxBucketsGenerator
 from solver_generators.generators.smallest_bucket import SmallestBucketGenerator
 
@@ -10,12 +11,13 @@ from solver_generators.generators.smallest_bucket import SmallestBucketGenerator
 class GenerateJSONSolvers(object):
     SOLVER_GENERATORS = {
         'alphabetical': AlphabeticalGenerator,
+        'information': InformationGenerator,
         'max_buckets': MaxBucketsGenerator,
         'smallest_bucket': SmallestBucketGenerator
     }
     MODES = [
         BaseGenerator.MODE_HARD,
-        BaseGenerator.MODE_EASY
+        BaseGenerator.MODE_EASY  # Doesn't work yet
     ]
 
     WORD_LIST_FILEPATH = 'solver_generators/fiveletterwords.txt'

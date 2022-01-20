@@ -11,8 +11,10 @@ ones.
 | Solver | Mode | 1 Guess | 2 Guesses | 3 Guesses | 4 Guesses | 5 Guesses | 6 Guesses | Remaining | Percentage 6 Guesses or Fewer |
 |--------|------|---------|-----------|-----------|-----------|-----------|-----------|-----------|-------------------------------|
 alphabetical | hard | 1 | 114 | 985 | 2649 | 3383 | 2690 | 3956 | 71.29%
+information | hard | 1 | 211 | 2114 | 4517 | 3233 | 1478 | 2110 | 84.56%
 max_buckets | hard | 1 | 211 | 2504 | 4921 | 2846 | 1268 | 1518 | 88.56%
 smallest_bucket | hard | 1 | 172 | 2104 | 4621 | 3257 | 1416 | 1734 | 86.97%
 alphabetical | easy | 1 | 114 | 114 | 114 | 114 | 114 | 13199 | 4.15%
+information | easy | 1 | 211 | 2114 | 4500 | 3250 | 1484 | 2109 | 84.57%
 max_buckets | easy | 1 | 211 | 3432 | 9925 | 12536 | 12902 | 38822 | 50.12%
 smallest_bucket | easy | 1 | 172 | 2572 | 8729 | 12357 | 12904 | 38813 | 48.62%

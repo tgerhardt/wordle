@@ -5,7 +5,8 @@ from solver_generators.word_comparisons import WordComparison
 
 
 class SmallestBucketGenerator(BaseGenerator):
-    def _find_guess(self, possible_guesses: List[str], valid_words: List[str]) -> str:
+    @staticmethod
+    def find_guess(possible_guesses: List[str], valid_words: List[str]) -> str:
         """
         Return the guess whose largest bucket is the smallest out of any guess
         """

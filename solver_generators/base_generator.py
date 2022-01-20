@@ -14,8 +14,8 @@ class BaseGenerator(object):
         self._mode = mode
         self._full_word_list = full_word_list
 
-
-    def _find_guess(self, possible_guesses: List[str], valid_words: List[str]) -> str:
+    @staticmethod
+    def find_guess(possible_guesses: List[str], valid_words: List[str]) -> str:
         """
         Take in the possible guesses and determine the best one. Implemented in child classes
         """
@@ -26,7 +26,7 @@ class BaseGenerator(object):
         Generate a solver. A solver is a nested dictionary that can be used to guess a word
         """
         # Determine the guess
-        guess = self._find_guess(possible_guesses, valid_words)
+        guess = self.find_guess(possible_guesses, valid_words)
 
         # Use the guess to split apart the remaining words
         groupings = WordComparison.split_into_pattern_match_groups(guess, valid_words)
@@ -57,4 +57,4 @@ class BaseGenerator(object):
         """
         Generate a solver. A solver is a nested dictionary that can be used to guess a word
         """
-        return self._recursively_generate_a_solver(self._full_word_list, self._full_word_list, 0)
+        return self._recursively_generate_a_solver(self._full_word_list, self._full_word_list, 1)

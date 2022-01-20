@@ -5,7 +5,8 @@ from solver_generators.word_comparisons import WordComparison
 
 
 class MaxBucketsGenerator(BaseGenerator):
-    def _find_guess(self, possible_guesses: List[str], valid_words: List[str]) -> str:
+    @staticmethod
+    def find_guess(possible_guesses: List[str], valid_words: List[str]) -> str:
         """
         Return the guess that creates the most possible responses
         """
