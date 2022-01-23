@@ -1,0 +1,924 @@
+{
+  "ayaya": {
+    "BBBBB": {
+      "example": "bebop",
+      "words": 6270
+    },
+    "BBBBG": {
+      "example": "belga",
+      "words": 398
+    },
+    "BBBGB": {
+      "example": "bedye",
+      "words": 55
+    },
+    "BBBGG": {
+      "example": "bunya",
+      "words": 2
+    },
+    "BBGBB": {
+      "example": "beach",
+      "words": 947
+    },
+    "BBGBG": {
+      "example": "brava",
+      "words": 36
+    },
+    "BBGGB": {
+      "example": "blays",
+      "words": 28
+    },
+    "BBGGG": {
+      "example": "chaya",
+      "words": 4
+    },
+    "BGBBB": {
+      "example": "byded",
+      "words": 196
+    },
+    "BGBBG": {
+      "example": "gyoza",
+      "words": 11
+    },
+    "BGBGB": {
+      "example": "tyiyn",
+      "words": 2
+    },
+    "BGBYB": {
+      "example": "dykey",
+      "words": 9
+    },
+    "BGGBB": {
+      "example": "cyano",
+      "words": 19
+    },
+    "BGGBG": {
+      "example": "nyala",
+      "words": 1
+    },
+    "BYBBB": {
+      "example": "beefy",
+      "words": 1088
+    },
+    "BYBBG": {
+      "example": "boyla",
+      "words": 11
+    },
+    "BYBYB": {
+      "example": "boysy",
+      "words": 22
+    },
+    "BYGBB": {
+      "example": "beady",
+      "words": 89
+    },
+    "GBBBB": {
+      "example": "abbed",
+      "words": 469
+    },
+    "GBBBG": {
+      "example": "aboma",
+      "words": 34
+    },
+    "GBBGB": {
+      "example": "aleye",
+      "words": 4
+    },
+    "GBBGG": {
+      "example": "aliya",
+      "words": 1
+    },
+    "GBGBB": {
+      "example": "abaci",
+      "words": 62
+    },
+    "GBGBG": {
+      "example": "abaca",
+      "words": 9
+    },
+    "GBGBY": {
+      "example": "alaap",
+      "words": 1
+    },
+    "GBGGB": {
+      "example": "adays",
+      "words": 5
+    },
+    "GBGGG": {
+      "example": "abaya",
+      "words": 1
+    },
+    "GBYBB": {
+      "example": "aahed",
+      "words": 89
+    },
+    "GGBBB": {
+      "example": "ayelp",
+      "words": 6
+    },
+    "GGGBB": {
+      "example": "ayahs",
+      "words": 1
+    },
+    "GGGGG": {
+      "example": "ayaya",
+      "words": 1
+    },
+    "GYBBB": {
+      "example": "abbey",
+      "words": 42
+    },
+    "GYBBG": {
+      "example": "adyta",
+      "words": 2
+    },
+    "GYBYB": {
+      "example": "azygy",
+      "words": 1
+    },
+    "GYGBB": {
+      "example": "alary",
+      "words": 2
+    },
+    "GYYBB": {
+      "example": "abray",
+      "words": 7
+    },
+    "YBBBB": {
+      "example": "babel",
+      "words": 2257
+    },
+    "YBBBG": {
+      "example": "babka",
+      "words": 159
+    },
+    "YBBGB": {
+      "example": "barye",
+      "words": 4
+    },
+    "YBBGG": {
+      "example": "banya",
+      "words": 1
+    },
+    "YBGBB": {
+      "example": "baaed",
+      "words": 27
+    },
+    "YBGBG": {
+      "example": "kaama",
+      "words": 2
+    },
+    "YBYBB": {
+      "example": "babas",
+      "words": 181
+    },
+    "YGBBB": {
+      "example": "bylaw",
+      "words": 24
+    },
+    "YGBYB": {
+      "example": "byway",
+      "words": 1
+    },
+    "YYBBB": {
+      "example": "baccy",
+      "words": 364
+    },
+    "YYBBG": {
+      "example": "tayra",
+      "words": 7
+    },
+    "YYBYB": {
+      "example": "gayly",
+      "words": 7
+    },
+    "YYGBB": {
+      "example": "yaars",
+      "words": 1
+    },
+    "YYYBB": {
+      "example": "dayan",
+      "words": 12
+    }
+  },
+  "jujus": {
+    "BBBBB": {
+      "example": "aahed",
+      "words": 5556
+    },
+    "BBBBG": {
+      "example": "abacs",
+      "words": 3166
+    },
+    "BBBBY": {
+      "example": "abase",
+      "words": 1600
+    },
+    "BBBGB": {
+      "example": "about",
+      "words": 173
+    },
+    "BBBGG": {
+      "example": "aglus",
+      "words": 110
+    },
+    "BBBGY": {
+      "example": "adsum",
+      "words": 55
+    },
+    "BBGBB": {
+      "example": "bajan",
+      "words": 18
+    },
+    "BBGBG": {
+      "example": "dojos",
+      "words": 13
+    },
+    "BBGGB": {
+      "example": "cajun",
+      "words": 1
+    },
+    "BBGGG": {
+      "example": "bajus",
+      "words": 3
+    },
+    "BGBBB": {
+      "example": "audad",
+      "words": 595
+    },
+    "BGBBG": {
+      "example": "aulas",
+      "words": 350
+    },
+    "BGBBY": {
+      "example": "buist",
+      "words": 143
+    },
+    "BGBGB": {
+      "example": "augur",
+      "words": 9
+    },
+    "BGBGG": {
+      "example": "bubus",
+      "words": 30
+    },
+    "BGBGY": {
+      "example": "cusum",
+      "words": 4
+    },
+    "BGBYB": {
+      "example": "buchu",
+      "words": 7
+    },
+    "BGBYY": {
+      "example": "bussu",
+      "words": 2
+    },
+    "BGGBB": {
+      "example": "mujik",
+      "words": 2
+    },
+    "BGGBG": {
+      "example": "fujis",
+      "words": 2
+    },
+    "BGGBY": {
+      "example": "sujee",
+      "words": 1
+    },
+    "BYBBB": {
+      "example": "abuna",
+      "words": 508
+    },
+    "BYBBG": {
+      "example": "abuts",
+      "words": 199
+    },
+    "BYBBY": {
+      "example": "abuse",
+      "words": 158
+    },
+    "BYBGB": {
+      "example": "uncut",
+      "words": 5
+    },
+    "BYBGG": {
+      "example": "unaus",
+      "words": 2
+    },
+    "BYBGY": {
+      "example": "usque",
+      "words": 1
+    },
+    "BYBYB": {
+      "example": "ahuru",
+      "words": 6
+    },
+    "BYBYY": {
+      "example": "usual",
+      "words": 4
+    },
+    "BYGBB": {
+      "example": "bijou",
+      "words": 3
+    },
+    "BYGBY": {
+      "example": "sajou",
+      "words": 1
+    },
+    "GBBBB": {
+      "example": "jabot",
+      "words": 85
+    },
+    "GBBBG": {
+      "example": "jaaps",
+      "words": 59
+    },
+    "GBBBY": {
+      "example": "jasey",
+      "words": 4
+    },
+    "GBBGB": {
+      "example": "jarul",
+      "words": 3
+    },
+    "GBBGG": {
+      "example": "jehus",
+      "words": 2
+    },
+    "GGBBB": {
+      "example": "judge",
+      "words": 22
+    },
+    "GGBBG": {
+      "example": "jubas",
+      "words": 13
+    },
+    "GGBGB": {
+      "example": "jugum",
+      "words": 1
+    },
+    "GGBGG": {
+      "example": "jukus",
+      "words": 1
+    },
+    "GGGGG": {
+      "example": "jujus",
+      "words": 1
+    },
+    "GYBBB": {
+      "example": "jambu",
+      "words": 5
+    },
+    "GYBBG": {
+      "example": "jauks",
+      "words": 5
+    },
+    "GYBBY": {
+      "example": "joust",
+      "words": 1
+    },
+    "YBBBB": {
+      "example": "aflaj",
+      "words": 28
+    },
+    "YBBBG": {
+      "example": "ajies",
+      "words": 2
+    },
+    "YBBBY": {
+      "example": "basij",
+      "words": 4
+    },
+    "YBGBB": {
+      "example": "hajji",
+      "words": 1
+    },
+    "YGBBB": {
+      "example": "bunje",
+      "words": 4
+    },
+    "YYBBB": {
+      "example": "ajuga",
+      "words": 4
+    }
+  },
+  "pzazz": {
+    "BBBBB": {
+      "example": "becke",
+      "words": 6291
+    },
+    "BBBBG": {
+      "example": "blitz",
+      "words": 13
+    },
+    "BBBGB": {
+      "example": "bonze",
+      "words": 35
+    },
+    "BBBGG": {
+      "example": "chizz",
+      "words": 5
+    },
+    "BBGBB": {
+      "example": "abaca",
+      "words": 1012
+    },
+    "BBGBG": {
+      "example": "kranz",
+      "words": 1
+    },
+    "BBGGB": {
+      "example": "agaze",
+      "words": 22
+    },
+    "BBYBB": {
+      "example": "aahed",
+      "words": 3421
+    },
+    "BBYBG": {
+      "example": "arroz",
+      "words": 5
+    },
+    "BBYGB": {
+      "example": "adoze",
+      "words": 27
+    },
+    "BBYGG": {
+      "example": "abuzz",
+      "words": 1
+    },
+    "BGBBB": {
+      "example": "dzhos",
+      "words": 5
+    },
+    "BGBYB": {
+      "example": "ozzie",
+      "words": 1
+    },
+    "BGGBB": {
+      "example": "azans",
+      "words": 5
+    },
+    "BGYBB": {
+      "example": "azide",
+      "words": 16
+    },
+    "BGYYB": {
+      "example": "izzat",
+      "words": 1
+    },
+    "BYBBB": {
+      "example": "bezel",
+      "words": 114
+    },
+    "BYBGB": {
+      "example": "bezzy",
+      "words": 15
+    },
+    "BYBYB": {
+      "example": "zezes",
+      "words": 4
+    },
+    "BYGBB": {
+      "example": "zeals",
+      "words": 2
+    },
+    "BYYBB": {
+      "example": "adzed",
+      "words": 81
+    },
+    "BYYGB": {
+      "example": "huzza",
+      "words": 9
+    },
+    "BYYYB": {
+      "example": "zazen",
+      "words": 1
+    },
+    "GBBBB": {
+      "example": "pechs",
+      "words": 518
+    },
+    "GBBBG": {
+      "example": "plotz",
+      "words": 1
+    },
+    "GBBGB": {
+      "example": "peize",
+      "words": 4
+    },
+    "GBBGG": {
+      "example": "phizz",
+      "words": 1
+    },
+    "GBGBB": {
+      "example": "paals",
+      "words": 68
+    },
+    "GBGGB": {
+      "example": "peaze",
+      "words": 2
+    },
+    "GBYBB": {
+      "example": "pacas",
+      "words": 259
+    },
+    "GGGGG": {
+      "example": "pzazz",
+      "words": 1
+    },
+    "GYBBB": {
+      "example": "pized",
+      "words": 3
+    },
+    "GYBGB": {
+      "example": "pozzy",
+      "words": 1
+    },
+    "GYYGB": {
+      "example": "pizza",
+      "words": 1
+    },
+    "YBBBB": {
+      "example": "bebop",
+      "words": 626
+    },
+    "YBBBG": {
+      "example": "spitz",
+      "words": 1
+    },
+    "YBGBB": {
+      "example": "abamp",
+      "words": 121
+    },
+    "YBGGB": {
+      "example": "spaza",
+      "words": 1
+    },
+    "YBGGG": {
+      "example": "spazz",
+      "words": 1
+    },
+    "YBYBB": {
+      "example": "adept",
+      "words": 265
+    },
+    "YBYBG": {
+      "example": "capiz",
+      "words": 2
+    },
+    "YYBBB": {
+      "example": "unzip",
+      "words": 4
+    },
+    "YYYBB": {
+      "example": "zappy",
+      "words": 5
+    }
+  },
+  "qajaq": {
+    "BBBBB": {
+      "example": "bebop",
+      "words": 7419
+    },
+    "BBBGB": {
+      "example": "becap",
+      "words": 749
+    },
+    "BBBGG": {
+      "example": "umiaq",
+      "words": 1
+    },
+    "BBGBB": {
+      "example": "bijou",
+      "words": 19
+    },
+    "BBGGB": {
+      "example": "hejab",
+      "words": 8
+    },
+    "BBYBB": {
+      "example": "bunje",
+      "words": 142
+    },
+    "BBYGB": {
+      "example": "jehad",
+      "words": 13
+    },
+    "BGBBB": {
+      "example": "babel",
+      "words": 1809
+    },
+    "BGBGB": {
+      "example": "babas",
+      "words": 179
+    },
+    "BGBGG": {
+      "example": "talaq",
+      "words": 1
+    },
+    "BGBYB": {
+      "example": "aahed",
+      "words": 185
+    },
+    "BGGBB": {
+      "example": "bajri",
+      "words": 12
+    },
+    "BGGGB": {
+      "example": "bajan",
+      "words": 3
+    },
+    "BGGYB": {
+      "example": "bajra",
+      "words": 1
+    },
+    "BGYBB": {
+      "example": "banjo",
+      "words": 51
+    },
+    "BGYGB": {
+      "example": "falaj",
+      "words": 8
+    },
+    "BGYYB": {
+      "example": "ganja",
+      "words": 6
+    },
+    "BYBBB": {
+      "example": "abbed",
+      "words": 1979
+    },
+    "BYBBG": {
+      "example": "tranq",
+      "words": 1
+    },
+    "BYBGB": {
+      "example": "abbas",
+      "words": 98
+    },
+    "BYBYB": {
+      "example": "abaca",
+      "words": 155
+    },
+    "BYGBB": {
+      "example": "hejra",
+      "words": 2
+    },
+    "BYYBB": {
+      "example": "ajies",
+      "words": 17
+    },
+    "BYYGB": {
+      "example": "aflaj",
+      "words": 2
+    },
+    "BYYYB": {
+      "example": "ajiva",
+      "words": 4
+    },
+    "GBBBB": {
+      "example": "qophs",
+      "words": 44
+    },
+    "GBBGB": {
+      "example": "quean",
+      "words": 2
+    },
+    "GGBBB": {
+      "example": "qadis",
+      "words": 3
+    },
+    "GGBGB": {
+      "example": "qanat",
+      "words": 1
+    },
+    "GGGGG": {
+      "example": "qajaq",
+      "words": 1
+    },
+    "GYBBB": {
+      "example": "qibla",
+      "words": 27
+    },
+    "YBBBB": {
+      "example": "cinqs",
+      "words": 18
+    },
+    "YBBGB": {
+      "example": "equal",
+      "words": 6
+    },
+    "YGBBB": {
+      "example": "faqir",
+      "words": 3
+    },
+    "YYBBB": {
+      "example": "burqa",
+      "words": 1
+    },
+    "YYBGB": {
+      "example": "aquae",
+      "words": 2
+    }
+  },
+  "urubu": {
+    "BBBBB": {
+      "example": "aahed",
+      "words": 6470
+    },
+    "BBBBG": {
+      "example": "adieu",
+      "words": 36
+    },
+    "BBBGB": {
+      "example": "adobe",
+      "words": 140
+    },
+    "BBBGG": {
+      "example": "jambu",
+      "words": 3
+    },
+    "BBBYB": {
+      "example": "abaca",
+      "words": 690
+    },
+    "BBBYG": {
+      "example": "bantu",
+      "words": 6
+    },
+    "BBGBB": {
+      "example": "acute",
+      "words": 421
+    },
+    "BBGBG": {
+      "example": "voulu",
+      "words": 1
+    },
+    "BBGGB": {
+      "example": "blubs",
+      "words": 19
+    },
+    "BBGYB": {
+      "example": "abuna",
+      "words": 37
+    },
+    "BGBBB": {
+      "example": "araks",
+      "words": 678
+    },
+    "BGBBG": {
+      "example": "prahu",
+      "words": 1
+    },
+    "BGBGB": {
+      "example": "araba",
+      "words": 18
+    },
+    "BGBYB": {
+      "example": "arbas",
+      "words": 108
+    },
+    "BGGBB": {
+      "example": "aruhe",
+      "words": 66
+    },
+    "BGGGB": {
+      "example": "drubs",
+      "words": 3
+    },
+    "BGGYB": {
+      "example": "brugh",
+      "words": 13
+    },
+    "BYBBB": {
+      "example": "aargh",
+      "words": 2209
+    },
+    "BYBBG": {
+      "example": "chiru",
+      "words": 7
+    },
+    "BYBGB": {
+      "example": "barbe",
+      "words": 31
+    },
+    "BYBYB": {
+      "example": "abear",
+      "words": 192
+    },
+    "BYGBB": {
+      "example": "alure",
+      "words": 86
+    },
+    "BYGBG": {
+      "example": "ahuru",
+      "words": 2
+    },
+    "BYGYB": {
+      "example": "baurs",
+      "words": 12
+    },
+    "GBBBB": {
+      "example": "udals",
+      "words": 108
+    },
+    "GBBYB": {
+      "example": "umbel",
+      "words": 10
+    },
+    "GBGBB": {
+      "example": "usual",
+      "words": 2
+    },
+    "GBYBB": {
+      "example": "unaus",
+      "words": 7
+    },
+    "GGBBB": {
+      "example": "uraei",
+      "words": 28
+    },
+    "GGBYB": {
+      "example": "urban",
+      "words": 3
+    },
+    "GGGGG": {
+      "example": "urubu",
+      "words": 1
+    },
+    "GYBBB": {
+      "example": "udder",
+      "words": 21
+    },
+    "GYBYB": {
+      "example": "umber",
+      "words": 4
+    },
+    "GYGBB": {
+      "example": "usure",
+      "words": 3
+    },
+    "GYGBG": {
+      "example": "uhuru",
+      "words": 1
+    },
+    "GYYBB": {
+      "example": "uprun",
+      "words": 1
+    },
+    "YBBBB": {
+      "example": "adsum",
+      "words": 897
+    },
+    "YBBBG": {
+      "example": "kudzu",
+      "words": 5
+    },
+    "YBBGB": {
+      "example": "bubba",
+      "words": 21
+    },
+    "YBBYB": {
+      "example": "about",
+      "words": 148
+    },
+    "YBBYG": {
+      "example": "buchu",
+      "words": 4
+    },
+    "YBYBB": {
+      "example": "cusum",
+      "words": 36
+    },
+    "YBYYB": {
+      "example": "bubus",
+      "words": 2
+    },
+    "YGBBB": {
+      "example": "arcus",
+      "words": 21
+    },
+    "YYBBB": {
+      "example": "amour",
+      "words": 339
+    },
+    "YYBGB": {
+      "example": "burbs",
+      "words": 7
+    },
+    "YYBYB": {
+      "example": "buhrs",
+      "words": 46
+    },
+    "YYYBB": {
+      "example": "augur",
+      "words": 7
+    },
+    "YYYYB": {
+      "example": "rubus",
+      "words": 1
+    }
+  }
+}
