@@ -21,6 +21,7 @@ class GenerateJSONSolvers(object):
     ]
 
     WORD_LIST_FILEPATH = 'solver_generators/static_files/fiveletterwords.txt'
+    ANSWER_LIST_FILEPATH = 'solver_generators/static_files/answers.json'
     GENERATOR_OUTPUT_FILEPATH_TEMPLATE = 'solvers/json/{mode}/{solver}.json'
 
     def __init__(self):
@@ -39,6 +40,15 @@ class GenerateJSONSolvers(object):
             for line in f.readlines():
                 full_word_list.append(line.strip())
         return full_word_list
+
+    @staticmethod
+    def load_answer_list():
+        """
+        Load the answer list
+        """
+        with open(os.path.join(ROOT_DIR, GenerateJSONSolvers.ANSWER_LIST_FILEPATH), 'r') as f:
+            full_answer_list = json.load(f)
+        return full_answer_list
 
     def run(self):
         """

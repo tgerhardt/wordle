@@ -1,0 +1,29 @@
+{
+  "decision_tree": {
+    "BBBBB": "those",
+    "BBBBG": "knoll",
+    "BBBGY": "pleat",
+    "BBBYB": "whack",
+    "BBBYY": "aloft",
+    "BBGBB": "moist",
+    "BBGBG": "skill",
+    "BBYBB": "cynic",
+    "BBYBY": "light",
+    "BGBYB": "frame",
+    "BYBBB": "perky",
+    "BYBBY": "elder",
+    "BYBYB": "shard",
+    "BYYBB": "robin",
+    "GYBBY": "ulcer",
+    "GYBYY": "ultra",
+    "YBBBB": "mount",
+    "YBBBY": "could",
+    "YBBYB": "pause",
+    "YGBBB": "wrung",
+    "YYBBB": "humor",
+    "YYBGB": "sugar"
+  },
+  "guess": "urial",
+  "streak_length": 22,
+  "streak_start": "2022-01-23"
+}
