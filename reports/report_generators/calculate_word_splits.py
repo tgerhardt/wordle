@@ -1,11 +1,13 @@
 from generate_json_solvers import GenerateJSONSolvers
 from solver_generators.word_comparisons import WordComparison
 from definitions import ROOT_DIR
-
-from typing import List
+from collections import defaultdict
+from datetime import datetime
 
 import os
 import json
+
+from typing import List
 
 OUTPUT_CONTENT = """
 # Solver Scores
@@ -26,54 +28,59 @@ SOLVER_ROW_TEMPLATE = "{solver} | {mode} | {counts} | {percentage}"
 class CalculateWordSplits(object):
     README_FILEPATH = "reports/report_output/word_splits.md"
     JSON_FILEPATH = "reports/report_output/word_splits.json"
+    JSON_DETAILS_FILEPATH = "reports/report_output/word_splits_breakdown_{side}.json"
 
-    def _recursively_count_words(self, sub_solver: dict, depth: int) -> List[int]:
+    def _get_top_n_words(self, split_count_words: dict, n: int, descending=True) -> List[str]:
         """
-        Recursively inspect the solver and return the number of words per depth
+        Return the top N words
         """
-        word_counts = [0] * (BaseGenerator.MAX_DEPTH + 1)
-        word_counts[min(depth, BaseGenerator.MAX_DEPTH)] += 1  # This level
-
-        if isinstance(sub_solver, list):
-            # Don't recurse, just count
-            word_counts[min(depth + 1, BaseGenerator.MAX_DEPTH)] += len(sub_solver)
-        else:
-            # Recurse on each branch
-            for sub_sub_solver in sub_solver["branches"].values():
-                sub_word_counts = self._recursively_count_words(sub_sub_solver, depth + 1)
-                for index, val in enumerate(sub_word_counts):
-                    word_counts[index] += val
-
-        return word_counts
-
+        top_words = []
+        for key, val in sorted(split_count_words.items(), reverse=descending):
+            for word in val:
+                top_words.append(word)
+                if len(top_words) == n:
+                    return top_words
 
     def run(self):
         """
         Loop over all the words and determine how many buckets each word splits the list into
         """
-        solver_rows = []
+        split_count_words = defaultdict(list)
 
-        for mode in GenerateJSONSolvers.MODES:
-            for name, generator in GenerateJSONSolvers.SOLVER_GENERATORS.items():
-                saved_solver = GenerateJSONSolvers.GENERATOR_OUTPUT_FILEPATH_TEMPLATE.format(mode=mode, solver=name)
-                print('Scoring Solver "{solver}", Mode "{mode}"'.format(mode=mode, solver=name))
+        # Loop over the words and store how much they split the options
+        full_word_list = GenerateJSONSolvers.load_word_list()
+        for index, guess in enumerate(full_word_list):
+            split_count = len(WordComparison.split_into_pattern_match_groups(guess=guess, word_list=full_word_list))
+            split_count_words[split_count].append(guess)
 
-                if os.path.exists(saved_solver):
-                    # Load the data
-                    with open(os.path.join(ROOT_DIR, saved_solver), 'r') as f:
-                        solver_data = json.load(f)
+            if index % 100 == 0:
+                print("%s: Index %d out of %d" % (datetime.now(), index, len(full_word_list)))
 
-                    word_counts = self._recursively_count_words(solver_data, 0)
-                    counts_str = " | ".join([str(count) for count in word_counts])
-                    percentage = 100.0 * (sum(word_counts[:-1]) / sum(word_counts))
-                    row = SOLVER_ROW_TEMPLATE.format(solver=name, mode=mode, counts=counts_str,
-                                                     percentage=("%.2f%%" % percentage))
-                    solver_rows.append(row)
+        # Store the JSON information for the splits
+        with open(os.path.join(ROOT_DIR, self.JSON_FILEPATH), 'w') as f:
+            json_output = {"{:03d}".format(key): val for key, val in split_count_words.items()}
+            json.dump(json_output, f, sort_keys=True, indent=2)
 
-        # Save the result
-        output = OUTPUT_CONTENT.format(rows="\n".join(solver_rows))
-        with open(os.path.join(ROOT_DIR, self.OUTPUT_FILEPATH), 'w') as f:
-            f.write(output)
+        return None  # Exit early
+
+        # Get the top and bottom 5
+        extremes = {
+            'top': self._get_top_n_words(split_count_words, 5, True),
+            'bottom': self._get_top_n_words(split_count_words, 5, False)
+        }
+        for side, guesses in extremes.items():
+            words_data = []
+            for guess in guesses:
+                word_data = {}
+                split_data = WordComparison.split_into_pattern_match_groups(guess=guess, word_list=full_word_list)
+
+                # Convert each split into a count and example
+                #for
+
+        # Save the documentation
+        #output = OUTPUT_CONTENT.format(rows="\n".join(solver_rows))
+        #with open(os.path.join(ROOT_DIR, self.OUTPUT_FILEPATH), 'w') as f:
+        #    f.write(output)
 
 if __name__ == '__main__':
     CalculateWordSplits().run()

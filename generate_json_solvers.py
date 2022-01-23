@@ -27,10 +27,18 @@ class GenerateJSONSolvers(object):
         """
         Load the word list
         """
-        self._full_word_list = []
-        with open(os.path.join(ROOT_DIR, self.WORD_LIST_FILEPATH), 'r') as f:
+        self._full_word_list = GenerateJSONSolvers.load_word_list()
+
+    @staticmethod
+    def load_word_list():
+        """
+        Load the word list
+        """
+        full_word_list = []
+        with open(os.path.join(ROOT_DIR, GenerateJSONSolvers.WORD_LIST_FILEPATH), 'r') as f:
             for line in f.readlines():
-                self._full_word_list.append(line.strip())
+                full_word_list.append(line.strip())
+        return full_word_list
 
     def run(self):
         """

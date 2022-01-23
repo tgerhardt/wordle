@@ -19,10 +19,7 @@ class GenerateComparisonCache(object):
         Loop over all the pairs of words and get the info for when its cached
         """
         # Load the word list
-        full_word_list = []
-        with open(os.path.join(ROOT_DIR, GenerateJSONSolvers.WORD_LIST_FILEPATH)) as f:
-            for line in f.readlines():
-                full_word_list.append(line.strip())
+        full_word_list = GenerateJSONSolvers.load_word_list()
 
         cache_data = defaultdict(dict)
         output_rows = []
