@@ -6,7 +6,7 @@ from solver_generators.generators.alphabetical import AlphabeticalGenerator
 from solver_generators.generators.information import InformationGenerator
 from solver_generators.generators.most_buckets import MaxBucketsGenerator
 from solver_generators.generators.smallest_bucket import SmallestBucketGenerator
-
+from definitions import ROOT_DIR
 
 class GenerateJSONSolvers(object):
     SOLVER_GENERATORS = {
@@ -20,7 +20,7 @@ class GenerateJSONSolvers(object):
         BaseGenerator.MODE_EASY  # Doesn't work yet
     ]
 
-    WORD_LIST_FILEPATH = 'solver_generators/fiveletterwords.txt'
+    WORD_LIST_FILEPATH = 'solver_generators/static_files/fiveletterwords.txt'
     GENERATOR_OUTPUT_FILEPATH_TEMPLATE = 'solvers/json/{mode}/{solver}.json'
 
     def __init__(self):
@@ -28,7 +28,7 @@ class GenerateJSONSolvers(object):
         Load the word list
         """
         self._full_word_list = []
-        with open(self.WORD_LIST_FILEPATH, 'r') as f:
+        with open(os.path.join(ROOT_DIR, self.WORD_LIST_FILEPATH), 'r') as f:
             for line in f.readlines():
                 self._full_word_list.append(line.strip())
 
@@ -45,7 +45,7 @@ class GenerateJSONSolvers(object):
                     print('Already Generated')
                 else:
                     output = generator(mode, self._full_word_list).generate_solver()
-                    with open(saved_solver, 'w') as f:
+                    with open(os.path.join(ROOT_DIR, saved_solver), 'w') as f:
                         json.dump(output, f, sort_keys=True, indent=2)
                     print('Generation Complete')
 

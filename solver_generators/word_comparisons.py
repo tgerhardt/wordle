@@ -6,6 +6,8 @@ class WordComparison(object):
     MATCH_PRESENCE = "Y"  # Yellow
     MATCH_POSITION = "G"  # Green
 
+    MISS = MATCH_NONE * 5
+
     @staticmethod
     def word_match(guess: str, answer: str) -> str:
         """

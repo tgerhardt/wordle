@@ -1,5 +1,6 @@
 from generate_json_solvers import GenerateJSONSolvers
 from solver_generators.base_generator import BaseGenerator
+from definitions import ROOT_DIR
 
 from typing import List
 
@@ -56,9 +57,9 @@ class CalculateSolverScores(object):
                 saved_solver = GenerateJSONSolvers.GENERATOR_OUTPUT_FILEPATH_TEMPLATE.format(mode=mode, solver=name)
                 print('Scoring Solver "{solver}", Mode "{mode}"'.format(mode=mode, solver=name))
 
-                if os.path.exists(saved_solver):
+                if os.path.exists(os.path.join(ROOT_DIR, saved_solver)):
                     # Load the data
-                    with open(saved_solver, 'r') as f:
+                    with open(os.path.join(ROOT_DIR, saved_solver), 'r') as f:
                         solver_data = json.load(f)
 
                     word_counts = self._recursively_count_words(solver_data, 0)
@@ -70,7 +71,7 @@ class CalculateSolverScores(object):
 
         # Save the result
         output = OUTPUT_CONTENT.format(rows="\n".join(solver_rows))
-        with open(self.OUTPUT_FILEPATH, 'w') as f:
+        with open(os.path.join(ROOT_DIR, self.OUTPUT_FILEPATH), 'w') as f:
             f.write(output)
 
 if __name__ == '__main__':
